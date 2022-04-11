@@ -1,0 +1,33 @@
+BACKGROUND:
+Hello! I’m the PACISE Programming Contest Chair. As chair, I have many responsibilities. One of these is trying to make sure that the problem set is well-balanced and that each problem is solvable (but not too easy!). These tasks can be tedious, so this year, I have decided to determine if the set is solvable by transforming each problem into objects in a game! In this game, you will be given a ball (a perfect sphere) of a certain radius. Each of the problems will become a block (a box with straight sides and all right angles) of some size. Harder problems become bigger blocks. Your task is to roll your ball around the playing area and try to collect all of the blocks. The catch is that you can only collect a problem if the center of mass of your ball is higher than the center of mass of the problem’s block. Once you collect a problem, your ball expands in volume by the volume of the problem’s block. A bigger ball allows you to collect bigger problems! If you can collect all of the blocks, then the problem set can be solved. Sounds like fun, right? Remember, the volume of a sphere is V=(4/3)πr^3, where r is the radius, and the volume of a box is V=lwh, where l is length, w is width, and h is height.
+
+From the ground, the center of mass of a sphere is as high as the radius of the sphere, and the center of mass of a box is as high as one half the box’s height. When using π, use a value of 3.141592653589793. \newline
+
+PROBLEM:
+Given a number of different problem sets, modeled as a collection of blocks, determine if each problem set can or cannot be solved if the optimal order of collection of the blocks is used.
+
+Input Format:
+The input will begin with a single, positive integer, p (p ≤ 10,000), and a positive real number, r, separated by a single space, representing the number of problems, and the initial radius of the ball, respectively. Following this will be p lines, each containing three real numbers, l, w, and h, separated by single spaces, representing the length, width, and height of the block for that problem.
+
+Output Format:
+Output the phrase, "It's going to be a good set! " if all of the problems can be “solved” by collecting their respective blocks with the ball. If the set cannot be “solved” in this way, output "We need to rebuild this! " instead.
+
+Sample Input 1 
+4 5.0
+10.0 10.0 10.0
+10.0 10.0 10.0
+10.0 10.0 10.0
+10.0 10.0 10.0
+
+Sample Output 1 
+We need to rebuild this!
+
+Sample Input 2 
+4 5.0
+20.0 20.0 1.0
+20.0 20.0 2.0
+20.0 20.0 3.0
+20.0 20.0 4.0
+
+Sample Output 2 
+It's going to be a good set!

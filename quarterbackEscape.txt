@@ -1,0 +1,24 @@
+BACKGROUND:
+The quarterback of a football has been kidnapped by a band of vicious opposing team mascots and is being held in a cavern far below the surface. She would like to simply wait until a rescuer comes to save her, since that would be the safest thing to do, but she just doesn’t have any faith in the concept of heros or heroines. Fortunately, she is prepared for just such an emergency. By pressing a secret button on her helmet, she causes a razor to protrude over the helmet’s rim, making it into a dangerous weapon. She has also found a length of rope. Her plan is to use the helmet as a weapon by attaching the rope to the helmet and then spinning the helmet in a circle around her. The quarterback has found herself in a large open cavern, with many opposing team mascots in it. She has to act quickly. Her plan is to swing her razor-helmet in a circle once, hitting as many mascots as possible, then run for the exit during the confusion.
+See the image in the link below.
+https://www.dropbox.com/s/gfm9e84k6w3feqw/Problem8Picture1.png?dl=0
+
+PROBLEM:
+Given a list of mascots’ (x, y) positions, and the position of the quarterback, your program must decide the length of rope the quarterback should use (this determines the radius for the helmet’s orbit). Each mascot (and the quarterback) can be thought of as 1-unit diameter circles, with the center of the circles at the given (x, y) coordinates. Do not consider the cave walls in this problem. Just find the integer radius for the helmet’s orbit which hits the most mascots. If multiple orbits hit the same number of mascots, choose the smallest orbit. Since the coordinates for the mascots and the quarterback are given in integers, it is not possible for people to overlap. The helmet always goes in a perfect circle, even when it hits a mascot. You may assume that any mascots on the inside of the orbit duck under the rope. For the purposes of this problem, the helmet does not have any physical size (in other words, it is a single point). When calculating the length of the rope, assume that the rope extends from the center of the quarterback’s circle.
+
+Input Format:
+The first line of each input set will contain a single integer n, indicating the number of mascots in that input set. The next line of each input set will contain two integers, representing the x- and y-coordinates of the quarterback. After that, there will be n lines, each containing two integers, representing the x- and y-coordinates for a mascot. The value of n will be between 1 and 100 inclusive. When a value of zero is read for n, this indicates the end of the input. All x- and y-coordinates will be integers between 1 and 1000 inclusive. No two mascots in the same input set will have the same coordinates; nor will any mascot have the same coordinates as the quarterback.
+
+Output Format:
+rint a line with a single integer, indicating the length of rope that the quarterback should use.
+
+Sample Input 1 
+3
+50 50
+58 52
+38 46
+46 54
+0
+
+Sample Output 1 
+6

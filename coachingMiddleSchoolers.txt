@@ -1,0 +1,33 @@
+BACKGROUND:
+In an effort to get younger students excited about programming, PACISE organizers are considering adding a middle school programming contest. To see if this will work, one PASSHE school will hold a contest with t teams consisting of n middle school students led by a single CIS Student coach. The CIS Student coach takes the group of middle school students to a computer lab for four weeks. The middle school students sit in the lab in a single computer row with the CIS Student coach in the middle. The CIS Student Coach noticed that many of the middle school students form small social groups that disrupt the coding practice lessons. To prevent disruptions before each morning practice, the CIS Student coach assigns each student a place in line. The CIS Student coach decides to write a program to help them by arranging the middle school students in a way that will not cause any disruptions during her coding practices session. A middle school student will cause a disruption if either of the adjacent middle school students to him or her are in the same social group. The CIS Student coach only needs to know if any arrangement exists that will avoid disruptions. If one does exist, she can easily determine the actual arrangement on her own.
+
+PROBLEM:
+
+Given the group number of each middle school in the CIS Student Coach’s team, determine if there exists an order for the middle school that will not cause any disruptions during the coding practice session.
+
+Input Format
+Each class starts with a line containing a positive integer, n (n ≤ 1,000), representing the number of middle school students in the team. The next line contains n integers, representing the social group number of each middle school student on teach. The group number for each middle school student will be within the range 1 to n. If the middle school students cannot be divided into two evenly-sized groups, then they should instead be divided into two groups of size (n - 1) / 2 and (n + 1) / 2.
+
+Output Format
+The output for each team display “YES” if an arrangement exists and “NO” if it does not.
+
+Sample Input 1 
+2
+1 1
+
+Sample Output 1 
+YES
+
+Sample Input 2 
+4
+1 1 1 2
+
+Sample Output 2 
+NO
+
+Sample Input 3 
+8
+1 3 1 2 3 3 2 3 
+
+Sample Output 3 
+YES
